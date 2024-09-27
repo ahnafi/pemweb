@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --text-color: rgb(224, 219, 219);
+        }
+
+        body {
+            cursor: grab;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar-brand {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: medium;
+        }
+
+        @media (min-width: 1024px) {
+            nav {
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: drop-shadow(8px);
+            }
+        }
+
+        @media (max-width : 768px) {
+            nav a {
+                padding: 10px 10px;
+                border-radius: 6px;
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: drop-shadow(8px);
+            }
+        }
+
+        #hero {
+            background: rgb(56, 58, 68);
+            background: radial-gradient(circle, rgba(56, 58, 68, 1) 0%, rgba(29, 27, 27, 1) 100%);
+            font-family: "Bebas Neue", sans-serif;
+            height: 100vh;
+        }
+
+        #hero h1 {
+            font-size: 5rem;
+            color: var(--text-color);
+            text-shadow: -2px -6px 16px black, 2px 6px 16px black;
+        }
+
+        #hero p {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-top: -1.6rem;
+            text-shadow: 0px 2px 24px black;
+        }
+
+        #about,
+        #distro,
+        #desktop {
+            background: rgba(29, 27, 27, 1);
+            box-shadow: 0px -20px 20px rgba(29, 27, 27, 1);
+            color: var(--text-color);
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+    <title>FOSS Anti SPY SPY</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="https://github.com/ahnafi" target="_blank">Sulthon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img src="https://img.icons8.com/?size=25&id=87716&format=png&color=ffffff" alt="hamburg button">
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">H1D023026</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fw-semibold">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#distro">Distro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#desktop">Desktop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end navbar -->
+    <!-- hero -->
+    <div id="hero" class="container-fluid text-light py-5">
+        <div class="row position-relative my-5 px-2">
+            <div class="col-md-12 d-flex justify-content-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="500"
+                    alt="Tux - The Linux">
+            </div>
+            <div id="hero-text"
+                class="col-md-12 text-center text-uppercase position-absolute top-100 start-50 translate-middle">
+                <h1 class="fw-semibold">LINUX</h1>
+                <p class="">Free and open-source software</p>
+            </div>
+        </div>
+    </div>
+    <!-- end hero -->
+    <!-- about -->
+    <div id="about" class="container-fluid px-md-5 py-5">
+        <div class="row mx-1 py-3 bg-dark rounded-3">
+            <div class="px-3 col-md-8">
+                <h2 class="fw-bold">About Linux</h2>
+                <hr>
+                <h3 class="fw-semibold ">What is Linux?</h3>
+                <p class="text-justify">Linux is a free and open-source family of operating systems that is resilient
+                    and flexible. In 1991,
+                    an individual by the name as Linus Torvalds constructed it. The system’s source code is accessible
+                    to everyone for anyone to look at and change, making it cool that anyone can see how the system
+                    works. People from all across the world are urged to work together and keep developing Linux due to
+                    its openness. Since the beginning, Linux has grown into a dependable and safe OS that is used in an
+                    array of gadgets, including PCs, cell phones, and huge supercomputers. It is well-known for being
+                    cost-effective, which implies that employing it doesn’t cost a lot, and efficient, which indicates
+                    it can complete a lot of jobs quickly.</p>
+                <h3 class="fw-semibold ">
+                    Why use Linux?
+                </h3>
+                <p class="text-justify">
+                    Because it is free, open-source, and extremely flexible, Linux is widely utilized. For servers and
+                    developers, it is the ideal option because it offers strong security, stability, and performance.
+                    Generally interoperable hardware, a broad software library, and a vibrant community that offers
+                    support and regular updates are the many benefits of Linux. Due to its adaptability, users can
+                    customize the operating system according to their own needs, whether they become for personal or
+                    large enterprise use.
+                </p>
+                <h3 class="fw-semibold ">Installing Linux</h3>
+                <p class="text-justify">Selecting a Ubuntu, Fedora, or Linux Mint distribution which suits your needs is
+                    the initial
+                    step in
+                    the straightforward procedure for installing Linux. Download the ISO file first from the
+                    distribution’s official website. Next, utilize an application like Etcher for macOS and Linux or
+                    Rufus for Windows to create a bootable USB drive. Following you insert the USB drive into your
+                    computer and restart it, you may set the USB drive as the primary boot device by traversing to the
+                    BIOS or UEFI settings. Upon booting from the USB the hard drive, the Linux setup will show up. To
+                    partition the drive, choose your time zone, create user accounts, and change system settings, simply
+                    adhere to the instructions displayed on the screen. When the installation concludes, disconnect the
+                    USB drive and turn on your computer normally. For mare detailed way to install the Linux Mint Refer
+                    this <a href="https://www.geeksforgeeks.org/how-to-install-linux-mint/" target="_blank"
+                        class="link-success">link.</a></p>
+            </div>
+            <div class="col-md-4 rounded text-center ">
+                <figure class="figure">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg"
+                        class="figure-img img-fluid rounded" alt="Linus Torvalds">
+                    <figcaption class="figure-caption text-end text-white">Linus Torvalds</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- Distro -->
+    <div id="distro" class="container-fluid px-md-5 py-5">
+        <div class="row mx-2">
+            <div class="col text-center ">
+                <h2 class="fw-bold">Which distribution is right for you?</h2>
+            </div>
+        </div>
+        <div class="row px-2 d-flex flex-wrap justify-content-center">
+            <div class="col-md-5 my-2 mx-2 d-flex flex-wrap justify-content-center  rounded-3 p-1 bg-white">
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2  bg-dark">
+                    <h3 class="text-white">
+                        For Beginners
+                    </h3>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-warning-subtle">
+                    <a href="https://ubuntu.com/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Ubuntu_logo_copyleft_1.svg"
+                            alt="Ubuntu-logo-2022" class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-secondary">
+                    <a href="https://www.debian.org/" target="_blank">
+
+                        <img src="https://www.debian.org/logos/openlogo-nd.svg" alt="debian logo"
+                            class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-success">
+                    <a href="https://linuxmint.com/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg"
+                            alt="linux mint logo" class="img-fluid object-fit-cover" height="200" width="200">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5 my-2 mx-2 d-flex flex-wrap justify-content-center  rounded-3 p-1 bg-white">
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2  bg-primary">
+                    <h3 class="text-white">
+                        For Advanced Users
+                    </h3>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-dark-subtle">
+                    <a href="https://archlinux.org/" target="_blank">
+                        <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" alt="Arch linux logo"
+                            class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-body-tertiary">
+                    <a href="https://nixos.org/" target="_blank">
+
+                        <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" alt="nixos logo"
+                            class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-body-secondary">
+                    <a href="https://www.gentoo.org/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Gentoo_Linux_logo_matte.svg"
+                            alt="linux mint logo" class="img-fluid object-fit-cover" height="200" width="200">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5 my-2 mx-2 d-flex flex-wrap justify-content-center  rounded-3 p-1 bg-white">
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2  bg-success">
+                    <h3 class="text-white">
+                        For Servers
+                    </h3>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-primary-subtle">
+                    <a href="https://www.centos.org/" target="_blank">
+                        <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" alt="centos logo"
+                            class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-black">
+                    <a href="https://www.redhat.com/" target="_blank">
+
+                        <img src="https://www.vectorlogo.zone/logos/redhat/redhat-icon.svg" alt="redhat logo"
+                            class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-light-subtle">
+                    <a href="https://www.debian.org/" target="_blank">
+
+                        <img src="https://www.debian.org/logos/openlogo-nd.svg" alt="debian logo"
+                            class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5 my-2 mx-2 d-flex flex-wrap justify-content-center  rounded-3 p-1 bg-white">
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-danger">
+                    <h3 class="text-white">
+                        For Security
+                    </h3>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-dark-subtle">
+                    <a href="https://www.kali.org/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kali-dragon-icon.svg"
+                            alt="Kali linux logo" class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-dark-subtle">
+                    <a href="https://parrotsec.org/" target="_blank">
+
+                        <img src="https://gitlab.com/parrotsec/project/graphics/-/raw/438605e6d38e04e2479fe95dc664f09186d70f5a/logo/parrotsec-logo.svg"
+                            alt="Parrot os logo" class="img-fluid object-fit-cover" width="200" height="200">
+                    </a>
+                </div>
+                <div
+                    class="col-6 border border-5 border-white rounded-4 d-flex justify-content-center align-items-center p-2 bg-black">
+                    <a href="https://blackarch.org/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/BlackArch_logo.png"
+                            alt="blackarch logo" class="img-fluid object-fit-cover" height="200" width="200">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end distro -->
+    <!-- desktop -->
+    <div class="container-fluid px-md-5 py-5" id="desktop">
+        <div class="row bg-dark rounded-3 px-3 py-3">
+            <div class="col-md-8">
+                <h2 class="fw-semibold">Desktop Environment</h2>
+                <hr>
+                <h3>What is DE (Desktop Environment)</h3>
+                <p class="text-justify">A desktop environment in Linux is a collection of software that provides a
+                    graphical user interface
+                    (GUI) for interacting with the operating system. It includes components like a window manager (which
+                    controls how windows appear and behave), a file manager (for browsing and organizing files), panels,
+                    menus, and other tools that make it easier to use the system without relying on command-line
+                    interactions.
+
+                    In simple terms, the desktop environment is what you see and use when you log into your Linux
+                    system, like how Windows or macOS look and work. Popular desktop environments in Linux include
+                    GNOME, KDE Plasma, and XFCE, each offering different features and visual styles. You can also switch
+                    between different desktop environments, depending on your preferences.</p>
+                <h3>5 popular DE in 2024</h3>
+                <ol class="">
+                    <li class="py-2">
+                        <h4>
+                            KDE Plasma <img
+                                src="https://kde.org/stuff/clipart/logo/kde-logo-white-blue-rounded-128x128.png"
+                                width="25" alt="KDE Plasma LOGO">
+                        </h4>
+                        <p class="text-justify">KDE Plasma is a modern and highly customizable desktop environment for
+                            Linux and other Unix-like systems. It's known for its sleek, visually appealing design and
+                            flexibility. Plasma is part of the KDE project, which provides a variety of software, but
+                            the Plasma desktop is its flagship product.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/KDE_Plasma_6_screenshot.png"
+                            width="300" alt="kde plasma desktop" class="img-fluid">
+                    </li>
+                    <li class="py-2">
+                        <h4>GNOME <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Gnomelogo.svg"
+                                width="25" alt="gnome logo" class="bg-white"></h4>
+                        <p class="text-justify">GNOME (GNU Network Object Model Environment) is a popular desktop
+                            environment for Linux and Unix-like systems. It is designed to be simple, clean, and
+                            user-friendly, providing a streamlined interface focused on ease of use and minimalism.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/GNOME_Shell.png" width="300"
+                            class="img-fluid" alt="gnome de">
+                    </li>
+                    <li class="py-2">
+                        <h4>XFCE <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Xfce_logo.svg" width="25"
+                                alt="xfce logo" class="bg-white"></h4>
+                        <p class="text-justify">XFCE is a lightweight desktop environment for Linux and Unix-like
+                            systems, designed to be fast, low on system resources, and user-friendly while maintaining a
+                            visually appealing interface. It’s especially popular for users who need to run Linux on
+                            older or less powerful hardware without sacrificing usability.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Xfce_4-18.png" width="300"
+                            class="img-fluid" alt="xfce de">
+                    </li>
+                    <li class="py-2">
+                        <h4>MATE <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Mate-logo.svg" width="25"
+                                alt="Mate logo" class="bg-white"></h4>
+                        <p class="text-justify">MATE is a desktop environment for Linux and other Unix-like systems,
+                            designed as a continuation of the GNOME 2 desktop. It was created to provide a familiar and
+                            traditional desktop experience, especially for users who preferred the look and feel of
+                            GNOME 2 before it transitioned to GNOME 3. MATE offers a lightweight, stable, and
+                            user-friendly interface that focuses on simplicity and efficiency.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/MATE_Desktop_1.26.png" width="300"
+                            class="img-fluid" alt="mate de">
+                    </li>
+                    <li class="py-2">
+                        <h4>Deepin DE <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/70/Deepin_logo_2017.png"
+                                width="25" alt="deepin logo" class="bg-white"></h4>
+                        <p class="text-justify">Deepin Desktop Environment (DDE) is a sleek, modern, and visually
+                            appealing desktop environment developed primarily for Deepin Linux, but it can also be
+                            installed on other Linux distributions. It’s designed with a focus on providing a polished,
+                            user-friendly experience, featuring beautiful aesthetics and intuitive usability.
+
+                        </p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/VirtualBox_Linux_Deepin_20.1_LARGE_17_03_2021_11_00_50.png"
+                            width="300" class="img-fluid" alt="deepin de">
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Popular_free_desktop_environments.svg"
+                    alt="Popular Desktop Environment" class="img-fluid bg-white rounded-4">
+            </div>
+        </div>
+    </div>
+    <!-- end dekstop -->
+    <!-- footer -->
+    <footer class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col">
+                <p class="text-center text-white py-2">Made with ❤️ by <a href="https://github.com/ahnafi"
+                        target="_blank">Atik Ahnafi Sulthon</a>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
